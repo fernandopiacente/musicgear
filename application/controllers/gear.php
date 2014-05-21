@@ -24,14 +24,21 @@ class Gear extends CI_Controller {
 	}
 
 	public function gears(){
-		$videos = $this->app_model->get_limited_gears("gears",1, 10);
+		$videos = $this->app_model->get_limited_gears("gears",1, 6);
 		
 		if(count($videos) == 0){
 			$this->set_msg(get_tag("strong","", "Nenhum resultado."));
 			redirect(base_url());	
 		}
 
-		$data['conteudo'] = $videos;		
+		$conteudo = array();
+		foreach ($videos as $v) {
+			$embed = get_embed($v->url);
+			$v->url = $embed;
+			$conteudo[$v->nome][] = $v;
+		}
+		$data['conteudo'] = $conteudo;
+		$data['tipo'] 	  = "gears";	
 		$this->load->view('comum/header');
 		$this->load->view('comum/menu');
 		$this->load->view('app/gears', $data);
@@ -40,36 +47,27 @@ class Gear extends CI_Controller {
 	}
 
 	public function estilos(){
-		$videos = $this->app_model->get_limited_gears("estilos",1, 10);
+		$videos = $this->app_model->get_limited_gears("estilos",1, 6);
 		
 		if(count($videos) == 0){
 			$this->set_msg(get_tag("strong","", "Nenhum resultado."));
 			redirect(base_url());	
 		}
-	
-		$data['conteudo'] = $videos;		
+		
+		$conteudo = array();
+		foreach ($videos as $v) {
+			$embed = get_embed($v->url);
+			$v->url = $embed;
+			$conteudo[$v->nome][] = $v;
+		}
+
+		$data['conteudo'] = $conteudo;	
+		$data['tipo'] 	  = "estilos";		
 		$this->load->view('comum/header');
 		$this->load->view('comum/menu');
 		$this->load->view('app/gears', $data);
 		$this->load->view('comum/loadjs');
 		$this->load->view('comum/rodape');	
-	}
-
-	public function vermais(){
-		$tipo = $this->input->post("tipo");
-		$videos = $this->app_model->get_limited_gears($tipo, 1, 10);
-		
-		if(count($videos) == 0){
-			echo json_encode(array());
-		}
-
-		$embed = array();
-
-		foreach ($videos as $v) {		
-			$embed[$v->nome][] = get_embed($v->url);
-		}
-
-		echo json_encode($embed);
 	}
 
 	public function set_msg($msg){

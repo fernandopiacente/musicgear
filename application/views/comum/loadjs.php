@@ -8,7 +8,7 @@
 <script src="<?php echo JS; ?>grayscale.js"></script>
 
 
-<?php $atual = get_url_atual(); $atual = $atual[2]; ?>
+<?php $atual = get_url_atual(); $atual = $atual[1]; ?>
 <?php switch ($atual) {
 	case 'ouvir': ?>
 	<script src="<?php echo JS; ?>app/plugins/typeahead.js"></script>

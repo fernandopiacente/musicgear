@@ -6,7 +6,7 @@
 					<h1><span class="glyphicon glyphicon-cog"></span></h1>
 					<h4 class="brand-heading"><?php echo $titulo; ?></h4>
 					<div class="col-md-12">
-						<div class="col-md-12" id="container-videos">
+						<div class="col-md-12">
 							
 							<?php foreach ($videos as $tag) { ?>
 							<?php foreach ($tag as $k => $v) { ?>

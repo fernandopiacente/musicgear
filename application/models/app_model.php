@@ -13,11 +13,11 @@ class App_model extends CI_Model {
             $sql = "SELECT m.id, url, nome 
             FROM musica m JOIN tag t JOIN tags ts 
             ON m.id = ts.musica_id AND ts.tag_id = t.id 
-            ORDER BY m.id LIMIT $since,  $qtd";
+            ORDER BY nome LIMIT $since,  $qtd";
         }else{
             $sql = "SELECT m.id, url, nome 
             FROM musica m JOIN estilo e ON m.estilo = e.id 
-            ORDER BY m.id LIMIT $since,  $qtd";
+            ORDER BY nome LIMIT $since,  $qtd";
         }
 
         $res = $this->db->query($sql);

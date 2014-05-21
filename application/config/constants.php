@@ -38,7 +38,7 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define("LOCAL", "http://localhost/musicgear/");
 define("ONLINE", "http://escute.url.ph/");
-define("ATUAL", LOCAL);
+define("ATUAL", ONLINE);
 
 define("JS", ATUAL."assets/js/");
 define("CSS", ATUAL."assets/css/");

@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'musicgeardb';
+$db['default']['hostname'] = 'mysql.hostinger.com.br';
+$db['default']['username'] = 'u341014060_app';
+$db['default']['password'] = 'doitallagain22@';
+$db['default']['database'] = 'u341014060_gear';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
