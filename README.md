@@ -14,7 +14,7 @@ Mas, diferente das máquinas, nós temos sentimentos e eles devem ser ouvidos. O
 <li>Controlar vídeos que não são músicas</li>
 <li>Criar ranks tipo best 90s</li>
 <li>Deixar o site + óbvio</li>
-<li>Verificar questão do carregamento</li>
+<li style="text-decoration:line-through">Verificar questão do carregamento</li>
 <li>Categorizador de palavras tipo
 <ul>
 	<li>{"Saudade", "Saudades", "Saudad"} -> "Saudade"</li>
