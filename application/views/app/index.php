@@ -81,7 +81,7 @@
     <div class="download-section">
         <div class="container">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>#Compartilhe!</h2>
+                <h2>#Compartilhe! <?php echo $numero; ?>+ músicas!</h2>
                 <p>Mostre aos seus amigos.</p>
                 <div class="col-md-12">
                     <div class="fb-share-button" data-href="http://www.inf.ufsc.br/~emersondemetrio/musicgear" data-type="button_count"></div>

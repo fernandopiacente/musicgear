@@ -9,9 +9,10 @@ class App extends CI_Controller {
 	}
 
 	public function index(){	
+		$data['numero'] = $this->app_model->get_total();
 		$this->load->view('comum/header');
 		$this->load->view('comum/menu_home');
-		$this->load->view('app/index');
+		$this->load->view('app/index', $data);
 		$this->load->view('comum/loadjs');
 		$this->load->view('comum/rodape');
 	}

@@ -5,6 +5,13 @@ class Gear_model extends CI_Model {
         $this->load->database();
     }
 
+    function total(){
+        $sql = "SELECT COUNT(DISTINCT id) AS total FROM musica";
+        $res = $this->db->query($sql);
+        $res = $res->result();
+        return $res[0]->total;
+    }
+
     function get($id){
 
     }

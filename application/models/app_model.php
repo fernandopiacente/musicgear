@@ -8,6 +8,10 @@ class App_model extends CI_Model {
         $this->load->model('estilo_model');
     }
 
+    function get_total(){
+        return $this->gear_model->total();
+    }
+
     function get_limited_gears($tipo, $since, $qtd){
         if($tipo == "gears"){        
             $sql = "SELECT m.id, url, nome 
