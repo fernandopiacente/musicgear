@@ -1,0 +1,39 @@
+#alert-padrao{
+	min-width: 480px;
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	text-align: center;
+	z-index: 9999;
+}
+.lista-tags li{
+	float: left;
+	list-style: none;
+	display: inline-block;
+	background-color: rgb(179, 179, 179);
+	padding: 4px;
+	border-radius: 5px;
+	min-width: 80px;
+	color: rgb(187, 0, 0);
+	border: solid 1px #000;
+}
+.lista-tags li a{
+	color: rgb(187, 0, 0);
+}
+.lista-tags li a:hover{
+	color: #fff;
+}
+.lista-tags li:hover{
+	background-color: rgb(75, 69, 69);	
+	border: solid 1px #eee;
+	color: #fff;
+}
+.remove{
+	font-size: 10px;
+	color: #000;
+	cursor: pointer;
+}
+.remove:hover{
+	color: red;
+}
+.plus{float: left; padding: 3px 8px; margin-top: 1px; margin-left: 10px;}
