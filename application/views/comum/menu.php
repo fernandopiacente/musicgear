@@ -1,48 +1,26 @@
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="<?php echo base_url(); ?>#main-content">
-                HOME
-            </a>
-
-            <div class="dropdown navbar-brand">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">GEARS</a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="<?php echo base_url(); ?>gears">Gear</a></li>
-                    <li><a href="<?php echo base_url(); ?>estilos">Estilo</a></li>
-                </ul>
+<!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="<?php echo base_url(); ?>"><i class="fa fa-play"></i> MUSIC GEAR</a>
             </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="<?php echo base_url(); ?>#sobre">Sobre</a></li>
+                    <li><a href="<?php echo base_url(); ?>#contato">Contato</a></li>
+                </ul>
 
-            <?php $to = base_url()."ouvir"; ?>
-            <a class="navbar-brand" href="<?php echo $to; ?>">
-                <i class="fa fa-play-circle"></i>  
-                <span class="light">Ouvir</span> agora!
-            </a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#login">Meu nome</a></li>                    
+                </ul>
+
+            </div>
         </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-            <ul class="nav navbar-nav">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="<?php echo base_url(); ?>#main-content"></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="<?php echo base_url(); ?>#sobre">Sobre</a>
-                </li>
-                <li class="page-scroll">
-                    <a href="<?php echo base_url(); ?>#criar">Criar</a>
-                </li>
-
-                <li class="page-scroll">
-                    <a href="<?php echo base_url(); ?>#compartilhar">Compartilhar</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+    </div>  

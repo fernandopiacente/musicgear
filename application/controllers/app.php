@@ -11,7 +11,8 @@ class App extends CI_Controller {
 	public function index(){	
 		$data['numero'] = $this->app_model->get_total();
 		$this->load->view('comum/header');
-		$this->load->view('comum/menu_home');
+		$this->load->view('comum/menu');
+		$this->load->view('comum/side');
 		$this->load->view('app/index', $data);
 		$this->load->view('comum/loadjs');
 		$this->load->view('comum/rodape');
@@ -37,6 +38,7 @@ class App extends CI_Controller {
 
 			$this->load->view('comum/header');
 			$this->load->view('comum/menu');
+			$this->load->view('comum/side');
 			$this->load->view('app/ouvindo', $data);
 			$this->load->view('comum/loadjs');
 			$this->load->view('comum/rodape');	
@@ -46,6 +48,7 @@ class App extends CI_Controller {
 			$data['estilos'] = $estilos;
 			$this->load->view('comum/header');
 			$this->load->view('comum/menu');
+			$this->load->view('comum/side');
 			$this->load->view('app/ouvir', $data);
 			$this->load->view('comum/loadjs');
 			$this->load->view('comum/rodape');	

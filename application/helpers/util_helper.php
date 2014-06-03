@@ -130,6 +130,12 @@ if ( ! function_exists('test_method')){
 	function get_plural($palavra){
 		return $palavra."s";
 	}
+
+	function is_active($a){
+		$atual = get_url_atual();
+		$v = "";
+		if($a == $v){echo "i-active";}
+	}
 }
 
 //doc: http://stackoverflow.com/questions/804399/codeigniter-create-new-helper

@@ -11,13 +11,24 @@
 	<link href="<?php echo IMG; ?>icon.png" type="image/x-icon" rel="icon" />
 	<link href="<?php echo IMG; ?>icon.png" type="image/x-icon" rel="shortcut icon" />
 	<link href="<?php echo ATUAL; ?>assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
 
 	<link href="<?php echo CSS; ?>bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="<?php echo CSS; ?>grayscale.css" rel="stylesheet">
 	<link href="<?php echo CSS; ?>app.css" rel="stylesheet">
+	<link href="<?php echo CSS; ?>main.css" rel="stylesheet">
 	<script src="<?php echo JS; ?>app/jquery.min.js"></script>
+	<style type="text/css">
+	body {
+		min-height: 2000px;
+	}
+	.navbar-static-top {
+		margin-bottom: 19px;
+	}
+	</style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom" class="body-all" base="<?php echo base_url(); ?>">
