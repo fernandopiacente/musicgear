@@ -13,6 +13,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
+                    <li class=""><a href="<?php echo base_url(); ?>gears">Gears</a></li>
+                    <li class=""><a href="<?php echo base_url(); ?>estilos">Estilos</a></li>
                     <li><a href="<?php echo base_url(); ?>#sobre">Sobre</a></li>
                     <li><a href="<?php echo base_url(); ?>#contato">Contato</a></li>
                 </ul>

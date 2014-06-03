@@ -487,7 +487,7 @@ body > .navbar .btn-navbar-mobile {
 }
 body > header .navbar-toggle,
 body > .navbar .navbar-toggle {
-  background: #005593;
+  background: #000;
   border-color: transparent;
   border-radius: 0;
   color: #006cbc;
@@ -516,7 +516,7 @@ body > header .navbar-toggle:hover,
 body > .navbar .navbar-toggle:hover,
 body > header .navbar-toggle:focus,
 body > .navbar .navbar-toggle:focus {
-  background: #0063ad;
+  background: #000;
 }
 /*-------------------------------------------------------------------------*/
 /* 01. Typography */
