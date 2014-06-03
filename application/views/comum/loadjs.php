@@ -2,9 +2,6 @@
 
 <!-- Core JavaScript Files -->
 <script src="<?php echo JS; ?>app/bootstrap.min.js"></script>
-<script src="<?php echo JS; ?>app/jquery.easing.min.js"></script>
-
-<script src="<?php echo JS; ?>grayscale.js"></script>
 
 <?php $atual = get_url_atual(); $atual = $atual[2]; ?>
 <?php switch ($atual) {

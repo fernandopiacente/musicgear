@@ -10,7 +10,8 @@
 							<?php foreach ($conteudo as $nome => $videos) { ?>
 							<div class="col-md-12">
 								<br />
-								<h2><?php echo $nome; ?></h2>	
+								<?php $l = base_url().$tipo."/".$nome; ?>
+								<h2><a href="<?php echo $l; ?>"><?php echo $nome; ?></a></h2>									
 								<br />
 								<?php foreach ($videos as $v) { ?>														
 								<div class="col-md-4" id="video_<?php echo $v->id; ?>">

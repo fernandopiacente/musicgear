@@ -42,8 +42,10 @@ $route['default_controller'] 	= "app";
 $route['404_override'] 			= '';
 $route['ouvir'] 				= 'app/ouvir'; 
 $route['ouvir/([a-z]+)'] 		= 'app/ouvir/$1'; 
+$route['gears/([a-z]+)'] 		= 'gear/gears/$1'; 
 $route['gears'] 				= 'gear/gears'; 
 $route['estilos'] 				= 'gear/estilos'; 
+$route['estilos/([a-z]+)'] 		= 'gear/estilos/$1'; 
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -46,7 +46,8 @@ class Gear extends CI_Controller {
 		$this->load->view('comum/rodape');	
 	}
 
-	public function estilos(){
+	public function estilos($t){
+		echo $t;
 		$videos = $this->app_model->get_limited_gears("estilos",1, 6);
 		
 		if(count($videos) == 0){

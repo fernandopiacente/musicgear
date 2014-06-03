@@ -78,19 +78,15 @@
 
 
             <section id="contato" class="content-section text-center">
-                <div class="download-section">
+                <div class="">
                     <div class="container">
                         <div class="col-lg-8" style="margin:0 auto;">
-                            <h2>#Compartilhe! <?php echo $numero; ?>+ músicas!</h2>
-                            <p>Mostre aos seus amigos.</p>
-                            <div class="col-md-12">
-                                <div class="fb-share-button" data-href="http://www.inf.ufsc.br/~emersondemetrio/musicgear" data-type="button_count"></div>
-                            </div>
-
+                            <h2>Contato</h2>                            
                         </div>
                     </div>
                 </div>
             </section>
+            
         </div>
         <style type="text/css">
         .no-margin{margin: 0 !important;}
